@@ -16,6 +16,12 @@ increment = () => {
   })
 };
 
+decrement = () => {
+  this.setState({
+    counter: this.state.counter -1
+  })
+};
+
 reset = () => {
   this.setState({
     counter: 0
@@ -29,6 +35,7 @@ reset = () => {
         <div className="counter">
           {this.state.counter}
           <button type="button" onClick={this.increment}>Add 1</button>
+          <button type="button" onClick={this.decrement}>Subtract 1</button>
           <button type="button" onClick={this.reset}>Reset</button>
           </div>
       </div>
