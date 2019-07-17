@@ -41,12 +41,12 @@ class Counter extends Component {
   };
 
   toggle = () => {
-    if (this.state.size == 1) {
+    if (this.state.size === 1) {
       this.setState({
         size: 2
       })
     }
-    if (this.state.size == 2) {
+    if (this.state.size === 2) {
       this.setState({
         size: 1
       })
